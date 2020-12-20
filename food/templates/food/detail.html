@@ -1,7 +1,23 @@
 {% extends 'food/base.html'%} {% block body %}
 <div class="container">
-  <h1>{{food_item.item_name}}</h1>
-  <h2>{{food_item.item_desc}}</h2>
-  <h2>{{food_item.item_price}}</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <img
+        src="{{ food_item.item_image }}"
+        alt="{{food_item.item_name}}"
+        width="500px"
+      />
+    </div>
+    <div class="col-md-6">
+      <h2>{{food_item.item_name}}</h2>
+      <h3>{{food_item.item_desc}}</h3>
+      <h4>₹{{food_item.item_price}}</h4>
+      <a
+        href="{% url 'food:delete_item' food_item.id %}"
+        class="btn btn-danger mt-5"
+        >Delete Item</a
+      >
+    </div>
+  </div>
 </div>
 {% endblock %}
