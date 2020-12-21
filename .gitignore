@@ -7,3 +7,5 @@ venv
 mysite/__pycache__
 food/__pycache__
 food/migrations
+users/__pycache__
+users/migrations
