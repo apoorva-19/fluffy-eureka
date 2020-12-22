@@ -61,3 +61,9 @@
 ```python
     python manage.py runserver
 ```
+
+## Create Super User
+
+```python
+    python manage.py createsuperuser
+```
