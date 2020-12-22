@@ -9,3 +9,4 @@ food/__pycache__
 food/migrations
 users/__pycache__
 users/migrations
+food/templatetags/__pycache__
